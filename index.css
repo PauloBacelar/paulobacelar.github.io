@@ -186,7 +186,8 @@ p {
 /* ----- Buttons and Links ----- */
 /* --------------------------------------- */
 
-a {
+a,
+button {
   color: var(--white);
   font-weight: 400;
   font-family: "Jost", sans-serif;
@@ -212,6 +213,7 @@ body:not(.user-is-tabbing) a:focus {
   color: var(--pink);
 }
 
+button,
 .btn {
   position: relative;
   display: inline-block;
@@ -222,10 +224,12 @@ body:not(.user-is-tabbing) a:focus {
   font-weight: 400;
 }
 
+button:focus,
 .btn:focus {
   outline: none;
 }
 
+button::after,
 .btn::after {
   content: "";
   display: block;
@@ -239,10 +243,22 @@ body:not(.user-is-tabbing) a:focus {
   transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
 }
 
+button:hover::after,
+button:focus::after,
 .btn:hover::after,
 .btn:focus::after {
   right: 0;
   background: var(--pink);
+}
+
+button {
+  background-color: transparent;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .btn--pink {
@@ -587,4 +603,44 @@ body:not(.user-is-tabbing) a:focus {
   .footer {
     padding: var(--gutter-medium) 0;
   }
+}
+
+.form {
+  margin-top: 50px;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  min-width: 300px;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 320px) {
+  .form__group {
+    min-width: 250px;
+  }
+}
+
+.form__group input {
+  border: none;
+  border-bottom: 1px solid var(--pink);
+  background-color: transparent;
+  outline: none;
+  font-family: "Hk Grotesk";
+  color: #fff;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.form__group textarea {
+  font-family: "Hk Grotesk";
+  font-size: 16px;
+  resize: none;
+  padding: 5px;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid var(--pink);
 }

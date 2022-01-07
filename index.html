@@ -1,207 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+    <title>Paulo Bacelar | Desenvolvedor</title>
 
-  <title>
-    Paulo Bacelar | Desenvolvedor
-  </title>
+    <meta
+      name="description"
+      content="Eu sou Paulo Bacelar, desenvolvedor front-end com ênfase em React.js"
+    />
+    <meta
+      name="keywords"
+      content="programador desenvolvedor front-end react html css scss javascript"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-  <meta name="description" content="Eu sou Paulo Bacelar, desenvolvedor front-end com ênfase em React.js">
-  <meta name="keywords" content="programador desenvolvedor front-end react html css scss javascript" />
-  <link rel="stylesheet" href="index.css" />
-</head>
-
-<body>
-  <header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Projetos</a></li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">Sobre</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contato</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="header__text-box row">
-      <div class="header__text">
-        <h1 class="heading-primary">
-          <!-- Replace the following name with your name -->
-          <span>Paulo Bacelar</span>
-        </h1>
-        <!-- Put a small paragraph about yourself -->
-        <p>Desenvolvedor Front-end</p>
-        <a href="#contact" class="btn btn--pink">Entre em contato</a>
-      </div>
-    </div>
-  </header>
-
-  <main role="main">
-
-    <!-- ***** Work ***** -->
-
-    <section class="work" id="work">
+  <body>
+    <header class="header" role="banner" id="top">
       <div class="row">
-        <h2>Meus projetos</h2>
-        <div class="work__boxes">
+        <nav class="nav" role="navigation">
+          <ul class="nav__items">
+            <li class="nav__item">
+              <a href="#work" class="nav__link">Projetos</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">Sobre</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contato</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__text-box row">
+        <div class="header__text">
+          <h1 class="heading-primary">
+            <!-- Replace the following name with your name -->
+            <span>Paulo Bacelar</span>
+          </h1>
+          <!-- Put a small paragraph about yourself -->
+          <p>Desenvolvedor Front-end</p>
+          <a href="#contact" class="btn btn--pink">Entre em contato</a>
+        </div>
+      </div>
+    </header>
 
-          <!-- Each div with the work__box class is a project. -->
+    <main role="main">
+      <!-- ***** Work ***** -->
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Clone da Netflix</h3>
-              <p>
-                Clone da UI da Netflix. Usuário pode acessar a lista de filmes e saber mais informações sobre eles ao selecioná-los.
-              </p>
-              <ul class="work__list">
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-              </ul>
+      <section class="work" id="work">
+        <div class="row">
+          <h2>Meus projetos</h2>
+          <div class="work__boxes">
+            <!-- Each div with the work__box class is a project. -->
 
-              <div class="work__links">
-                <a href="https://netflix-paulobacelar.netlify.app/" target="_blank" class="link__text">
-                  Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/PauloBacelar/netflix-clone" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Clone da Netflix</h3>
+                <p>
+                  Clone da UI da Netflix. Usuário pode acessar a lista de filmes
+                  e saber mais informações sobre eles ao selecioná-los.
+                </p>
+                <ul class="work__list">
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>React</li>
+                </ul>
+
+                <div class="work__links">
+                  <a
+                    href="https://netflix-paulobacelar.netlify.app/"
+                    target="_blank"
+                    class="link__text"
+                  >
+                    Site <span>&rarr;</span>
+                  </a>
+                  <a
+                    href="https://github.com/PauloBacelar/netflix-clone"
+                    title="View Source Code"
+                    target="_blank"
+                  >
+                    <img
+                      src="./images/github.svg"
+                      class="work__code"
+                      alt="GitHub"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="work__image-box">
+                <img
+                  src="./images/project-1.png"
+                  class="work__image"
+                  alt="Project 1"
+                />
               </div>
             </div>
-            <div class="work__image-box">
-              <img src="./images/project-1.png" class="work__image" alt="Project 1" />
-            </div>
-          </div>
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Dashboard de Criptomoedas</h3>
-              <p>
-                Informações sobre as principais criptomoedas do mercado. Usuário pode acessar lista de criptomoedas, seu preço, volume e saber se está em alta ou baixa. Ao selecionar uma moeda, o site mostra o gráfico de preço desta.
-              </p>
-              <ul class="work__list">
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-              </ul>
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Dashboard de Criptomoedas</h3>
+                <p>
+                  Informações sobre as principais criptomoedas do mercado.
+                  Usuário pode acessar lista de criptomoedas, seu preço, volume
+                  e saber se está em alta ou baixa. Ao selecionar uma moeda, o
+                  site mostra o gráfico de preço desta.
+                </p>
+                <ul class="work__list">
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>React</li>
+                </ul>
 
-              <div class="work__links">
-                <a href="https://crypto-paulobacelar.netlify.app/" class="link__text">
-                  Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/PauloBacelar/crypto-dashboard">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
+                <div class="work__links">
+                  <a
+                    href="https://crypto-paulobacelar.netlify.app/"
+                    class="link__text"
+                  >
+                    Site <span>&rarr;</span>
+                  </a>
+                  <a href="https://github.com/PauloBacelar/crypto-dashboard">
+                    <img
+                      src="./images/github.svg"
+                      class="work__code"
+                      title="View Source Code"
+                      alt="GitHub"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="work__image-box">
+                <img
+                  src="./images/project-2.png"
+                  class="work__image"
+                  alt="Project 1"
+                />
               </div>
             </div>
-            <div class="work__image-box">
-              <img src="./images/project-2.png" class="work__image" alt="Project 1" />
-            </div>
-          </div>
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Landing page</h3>
-              <p>
-                Landing page responsiva para um banco fictício chamado Easybank.
-              </p>
-              <ul class="work__list">
-                <li>HTML</li>
-                <li>SCSS</li>
-                <li>JavaScript</li>
-              </ul>
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Landing page</h3>
+                <p>
+                  Landing page responsiva para um banco fictício chamado
+                  Easybank.
+                </p>
+                <ul class="work__list">
+                  <li>HTML</li>
+                  <li>SCSS</li>
+                  <li>JavaScript</li>
+                </ul>
 
-              <div class="work__links">
-                <a href="https://easybank-paulobacelar.netlify.app/" class="link__text">
-                  Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/PauloBacelar/easybank-landing-page">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
+                <div class="work__links">
+                  <a
+                    href="https://easybank-paulobacelar.netlify.app/"
+                    class="link__text"
+                  >
+                    Site <span>&rarr;</span>
+                  </a>
+                  <a
+                    href="https://github.com/PauloBacelar/easybank-landing-page"
+                  >
+                    <img
+                      src="./images/github.svg"
+                      class="work__code"
+                      title="View Source Code"
+                      alt="GitHub"
+                    />
+                  </a>
+                </div>
               </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-3.png" class="work__image" alt="Project 3" />
+              <div class="work__image-box">
+                <img
+                  src="./images/project-3.png"
+                  class="work__image"
+                  alt="Project 3"
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ***** About ***** -->
-    <section class="about" id="about">
-      <div class="row">
-        <h2>Sobre mim</h2>
+      <!-- ***** About ***** -->
+      <section class="about" id="about">
+        <div class="row">
+          <h2>Sobre mim</h2>
           <div class="about__text">
             <!-- Replace the below paragraph with info about yourself -->
             <p>
-              Comecei estudando o básico de desenvolvimento web (HTML, CSS e JavaScript) no curso técnico de informática integrado no meu ensino médio. Acabei me interessando pelo assunto e me aprofuntei mais estudando por conta própria. Algumas das tecnologias que domino:
+              Comecei estudando o básico de desenvolvimento web (HTML, CSS e
+              JavaScript) no curso técnico de informática integrado no meu
+              ensino médio. Acabei me interessando pelo assunto e me aprofuntei
+              mais estudando por conta própria. Algumas das tecnologias que
+              domino:
             </p>
             <ul class="work__list">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Sass/SCSS</li>
-                <li>Bootstrap</li>
-                <li>React</li>
-              </ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Sass/SCSS</li>
+              <li>Bootstrap</li>
+              <li>React</li>
+            </ul>
             <!-- Provide a link to your resume -->
             <a href="#" class="btn">Meu currículo</a>
           </div>
         </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <!-- ***** Contact ***** -->
+    <!-- ***** Contact ***** -->
 
-  <section class="contact" id="contact">
-    <div class="row">
-      <h2>Entre em contato</h2>
-      <div class="contact__info">
-        <p>
-          Precisa de ajuda? Tem dúvidas? Deseja me dizer algo? Sinta-se à vontade para me contactar utilizando o formulário abaixo ou pelo e-mail no botão abaixo. De todo modo, vou fazer de tudo para responder o mais rápido possível 😊
-        </p>
-        <!-- Replace the email with yours -->
-        <a href="mailto:paulobdev@gmail.com" class="btn">paulobdev@gmail.com</a>
+    <section class="contact" id="contact">
+      <div class="row">
+        <h2>Entre em contato</h2>
+        <div class="contact__info">
+          <p>
+            Precisa de ajuda? Tem dúvidas? Deseja me dizer algo? Sinta-se à
+            vontade para me contactar utilizando o formulário abaixo ou pelo
+            e-mail no botão. De todo modo, vou fazer de tudo para te responder o
+            mais rápido possível 😊
+          </p>
+          <!-- Replace the email with yours -->
+          <a href="mailto:paulobdev@gmail.com" class="btn"
+            >paulobdev@gmail.com</a
+          >
+        </div>
+
+        <form class="form">
+          <div class="form__group">
+            <label for="nome">Nome</label>
+            <input type="text" placeholder="Digite seu nome" id="nome" />
+          </div>
+
+          <div class="form__group">
+            <label for="email">E-mail</label>
+            <input type="email" placeholder="Digite seu e-mail" id="email" />
+          </div>
+
+          <div class="form__group">
+            <label for="mensagem">Mensagem </label>
+            <textarea
+              name="mensagem"
+              id="mensagem"
+              cols="30"
+              rows="10"
+              placeholder="Escreva a sua mensagem"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn" id="submit">Enviar</button>
+        </form>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ***** Footer ***** -->
+    <!-- ***** Footer ***** -->
+    <footer role="contentinfo" class="footer">
+      <div class="row">
+        <!-- Update the links to point to your accounts -->
+        <ul class="footer__social-links">
+          <li class="footer__social-link-item">
+            <a
+              href="https://twitter.com/paulowebdev/"
+              title="Link to Twitter Profile"
+              target="_blank"
+            >
+              <img
+                src="./images/twitter.svg"
+                class="footer__social-image"
+                alt="Twitter"
+              />
+            </a>
+          </li>
+          <li class="footer__social-link-item">
+            <a
+              href="https://github.com/paulobacelar/"
+              title="Link to Github Profile"
+              target="_blank"
+            >
+              <img
+                src="./images/github.svg"
+                class="footer__social-image"
+                alt="Github"
+              />
+            </a>
+          </li>
+          <li class="footer__social-link-item">
+            <a href="https://www.linkedin.com/in/paulobacelar/" target="_blank">
+              <img
+                src="./images/linkedin.svg"
+                title="Link to Linkedin Profile"
+                class="footer__social-image"
+                alt="Linkedin"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
 
-  <footer role="contentinfo" class="footer">
-    <div class="row">
-      <!-- Update the links to point to your accounts -->
-      <ul class="footer__social-links">
-        <li class="footer__social-link-item">
-          <a href="https://twitter.com/paulowebdev/" title="Link to Twitter Profile" target="_blank">
-            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://github.com/paulobacelar/" title="Link to Github Profile" target="_blank">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://www.linkedin.com/in/paulobacelar/" target="_blank">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
-          </a>
-        </li>
-      </ul>
-  </footer>
-
-  <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
-  </a>
-  <script src="./index.js"></script>
-</body>
-
+    <a href="#top" class="back-to-top" title="Back to Top">
+      <img
+        src="./images/arrow-up.svg"
+        alt="Back to Top"
+        class="back-to-top__image"
+      />
+    </a>
+    <script src="./index.js"></script>
+  </body>
 </html>
