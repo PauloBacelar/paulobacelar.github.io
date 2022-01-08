@@ -59,7 +59,7 @@ This project uses the following technologies:
 
 ### ⚖ Rights
 
-All rights reserved <a href="https://github.com/nisarhassan12">nisrhassa12</a>
+All rights reserved to <a href="https://github.com/nisarhassan12">nisrhassa12</a>
 
 <hr/>
 
