@@ -6,7 +6,7 @@
     💼 Portfolio
 </h1>
 
-<p align="center">Netflix UI clone website</p>
+<p align="center">My portfolio</p>
 
 <p align="center">
   <a href="#-features">Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
